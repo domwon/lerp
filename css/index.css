@@ -1,0 +1,105 @@
+@font-face { 
+    font-family: Roboto;
+    src: url('../res/Roboto-Light.ttf');
+}
+
+html {
+    height: 100%;
+}
+body {
+    font-family: Roboto, sans-serif;
+    text-align: left;
+    background: linear-gradient(rgb(25,25,25), darkslategray);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    overflow: auto;
+    color: gainsboro;
+    font-size: 1.5vw;
+    padding: 2vmin;
+}
+#title, h2 {
+    color: lightcoral;
+}
+#title {
+    margin-top: 5vmin;
+    font-size: 4vw;
+}
+#splash {
+    width: 60%;
+    margin: auto;
+}
+footer {
+    width: 60%;
+    margin: 10vmin auto 0 auto;
+    bottom: 2vmin;
+    color: lightblue;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link {
+    text-decoration: none;
+    font-weight: 900;
+    color: lightblue;
+    transition-duration: 0.2s;
+}
+.link:hover {
+    color: lightcoral;
+}
+#solve-btn {
+    height: 2vw;
+    width: 5vw;
+    background-color: rgba(0,0,0,0);
+    border: 0.5vmin solid lightblue;
+    border-radius: 0.5vmin;
+    color: lightblue;
+    font-weight: 700;
+    margin: 1vmin;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0.5vw 2vw;
+    text-decoration: none;
+}
+#solve-btn:hover {
+    background-color: lightblue;
+    color: #345678;
+    cursor: pointer;
+}
+#output {
+    display: inline-block;
+    width: 25%;
+    color: lightgreen;
+    margin: 1vmin;
+    text-align: center;
+}
+
+pre {
+    background-color: #222222;
+    padding: 2vmin;
+    color: lightgreen;
+    border-radius: 0.5vmin;
+    word-wrap: break-word; 
+    white-space: pre-wrap;
+}
+input[type = text] {
+    width: 25%;
+    padding: 1vmin;
+    display: inline-block;
+    border: 0.5vmin solid #222222;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 900;
+    background-color: #222222;
+    text-align: center;
+    margin: 1vmin;
+}
+input[type = text]:focus {
+    border: 0.5vmin solid lightcoral;
+    outline: 0;
+    color: rgba(220, 220, 220, 0.5);
+}

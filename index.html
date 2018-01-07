@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/index.css">
+        <title>Lerp | Linear Interpolation</title>
+    </head>
+    <body>
+        <div id="splash">
+            <h1 id="title">Lerp!</h1>
+            <p>Lerp is a tiny JavaScript library for all of your linear interpolation needs. Lerp is free to use, less than 2 kB, and dependent-free. You can manually enter data as points or as arrays and matrices.</p>
+            <p>Lerp allows you to linearly approximate a data point in the blink of an eye.
+                <a id="get-lerp-link" class="link" href="js/lerp-min.js" download>Get Lerp!</a>
+            </p>
+            
+            <h2>Quick Demo</h2>
+            <p>Input interpolation and known values and hit <b>SOLVE</b>!</p>
+            <input type="text" id="a1" name="a1" placeholder="A1">
+            <input type="text" id="givenA" name="givenA" placeholder="Given A">
+            <input type="text" id="a2" name="a2" placeholder="A2">
+            <input type="text" id="b1" name="b1" placeholder="B1">
+            <div id="output">?</div>
+            <input type="text" id="b2" name="b2" placeholder="B2">
+            <a id="solve-btn" class="center">SOLVE</a>
+            
+            <h2>How to Use</h2>
+            <p>Lerp supports both single and bilinear (double) interpolation. If you already know all the data points for interpolation, using Lerp is very simple! Single interpolate between points with one line of code.</p>
+<pre>
+lerp.s.pt(a1, a2, b1, b2, givenA);
+</pre>
+            <p>Double interpolation is just as easy!</p>
+<pre>
+lerp.d.pt(a1, a2, b1, b2, c1, c2, c3, c4, givenA, givenB);
+</pre>
+            <p>If you have data in arrays instead of individual points, Lerp can interpolate that too!</p>
+<pre>
+var arrayA = [1, 2, 3];
+var arrayB = [1, 4, 5];
+var givenA = 2;
+
+lerp.s.arr(arrayA, arrayB, givenA);
+</pre>
+            <p>Double interpolation can be peformed using with 2 arrays and a matrix of data.</p>
+<pre>
+var arrayA = [1, 2, 3];
+var arrayB = [1, 4, 5];
+var matrixC = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+var givenA = 2;
+var givenB = 3.5;
+
+lerp.d.arr(arrayA, arrayB, matrixC, givenA, givenB);
+</pre>
+            <h2>Contribute</h2>
+            <p>Want to see or build an awesome feature? Fork the project <a id="lerp-repo-link" class="link" href="#">here</a>.</p>
+        </div>
+        <footer>
+            <p>&copy; 2018 by Dominic Nguyen.</p>
+        </footer>
+    </body>
+</html>
+<script src="js/lerp-min.js"></script>
+<script src="js/index.js"></script>
